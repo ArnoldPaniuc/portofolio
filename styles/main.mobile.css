@@ -37,11 +37,13 @@ body {
     margin: 0px;
     justify-self: center;
     font-size: 24px;
+    margin-top: 30px;
   }
   body header i {
     align-self: center;
     font-size: 24px;
-    margin-right: 20px;
+    margin-right: 30px;
+    margin-top: 30px;
   }
   body .main {
     color: #fff;
@@ -51,6 +53,28 @@ body {
     margin-top: 200px;
     display: flex;
     flex-wrap: wrap;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 1.1;
+    padding-right: 60px;
+  }
+  body .main h1 div:nth-child(1),
+  body .main h1 div:nth-child(2),
+  body .main h1 div:nth-child(3) {
+    margin-right: 10px;
+  }
+  body .main h1 .highlight {
+    position: relative;
+    z-index: 100;
+  }
+  body .main h1 .highlight div:nth-child(2) {
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    bottom: 0px;
+    z-index: -100;
+    background: rgb(255, 113, 91);
+    transform: translate(0.15rem);
   }
   body .main .contacts {
     display: flex;
@@ -74,12 +98,29 @@ body {
     align-items: center;
     background: white;
   }
+  body .skills div:nth-child(1) {
+    margin-right: 10px;
+  }
   body .skills h1 {
     display: flex;
     flex-wrap: wrap;
     margin-left: 50px;
     margin-right: 50px;
     align-self: start;
+    font-weight: 400;
+  }
+  body .skills h1 .highlight {
+    position: relative;
+    z-index: 100;
+  }
+  body .skills h1 .highlight div:nth-child(2) {
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    bottom: 8px;
+    z-index: -100;
+    background: rgb(255, 113, 91);
+    transform: translate(0.15rem);
   }
   body .skills img {
     width: 50%;
@@ -116,6 +157,7 @@ body {
   body .about h3 {
     margin-left: 50px;
     margin-right: 50px;
+    font-weight: 900;
   }
   body .about p {
     margin-left: 50px;
