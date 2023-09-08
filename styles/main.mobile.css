@@ -1,1 +1,134 @@
-/*# sourceMappingURL=main.mobile.css.map */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+@media (max-width: 360px) {
+  html {
+    background: linear-gradient(-45deg, #121e27, #121e27, #121e27, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    line-height: 1.75;
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  body header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr;
+    color: #fff;
+  }
+  body header h1 {
+    margin: 0px;
+    justify-self: center;
+    font-size: 24px;
+  }
+  body header i {
+    align-self: center;
+    font-size: 24px;
+    margin-right: 20px;
+  }
+  body .main {
+    color: #fff;
+    margin: 0px 50px 100px 50px;
+  }
+  body .main h1 {
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body .main .contacts {
+    display: flex;
+    gap: 50px;
+  }
+  body .main .contacts .linkedin-icon,
+  body .main .contacts .github-icon,
+  body .main .contacts .mail-icon {
+    fill: orangered;
+    width: 24px;
+    height: 24px;
+  }
+  body .main p.paragraph {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 1.75;
+  }
+  body .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+  }
+  body .skills h1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    margin-right: 50px;
+    align-self: start;
+  }
+  body .skills img {
+    width: 50%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center center;
+       object-position: center center;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 20px;
+  }
+  body .skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  body .skills ul li {
+    list-style: none;
+    color: white;
+    background: rgb(18, 30, 39);
+    padding: 0.25rem 0.7rem;
+    margin: 0px 0.25rem 1rem 0px;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  body .about {
+    display: flex;
+    flex-direction: column;
+    background: white;
+  }
+  body .about h3 {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  body .about p {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  body .about a {
+    text-decoration: none;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+    font-weight: bold;
+    color: rgb(255, 113, 91);
+  }
+}/*# sourceMappingURL=main.mobile.css.map */
