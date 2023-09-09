@@ -28,6 +28,7 @@ body {
     }
   }
   body header {
+    word-wrap: break-word;
     display: grid;
     grid-template-columns: 1fr auto;
     grid-template-rows: 1fr;
@@ -172,5 +173,105 @@ body {
     margin-bottom: 100px;
     font-weight: bold;
     color: rgb(255, 113, 91);
+  }
+  body .project {
+    display: flex;
+    flex-direction: column;
+    background: white;
+  }
+  body .project h1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    margin-right: 50px;
+    align-self: start;
+    font-weight: 400;
+    font-size: 40px;
+  }
+  body .project h1 .highlight {
+    position: relative;
+    z-index: 100;
+  }
+  body .project h1 .highlight div:nth-child(2) {
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    bottom: 8px;
+    z-index: -100;
+    background: rgb(255, 113, 91);
+    transform: translate(0.15rem);
+  }
+  body .project .project-1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    margin-right: 50px;
+    align-self: start;
+    font-weight: 400;
+  }
+  body .project .project-1 h3 {
+    letter-spacing: 2px;
+    color: gray;
+    padding: 0;
+    margin: 0;
+  }
+  body .project .project-1 h2 {
+    font-size: 33px;
+    padding: 0;
+    margin: 0;
+  }
+  body .project .project-1 ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  body .project .project-1 ul li {
+    list-style: none;
+    color: white;
+    background: rgb(18, 30, 39);
+    padding: 0.25rem 0.7rem;
+    margin: 0px 0.25rem 1rem 0px;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  body .project .project-1 p {
+    font-size: 20.8px;
+    font-weight: 300;
+    border-radius: 25px;
+    margin: 0;
+  }
+  body .project .project-1 .view-project {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 150px;
+    padding-bottom: 2rem;
+  }
+  body .project .project-1 .view-project a {
+    background: rgb(255, 113, 91);
+    color: white;
+    z-index: 100;
+    transition: transform 1s ease-in-out 0s;
+    position: absolute;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0px 20px;
+    font-weight: bold;
+  }
+  body .project .project-1 .view-project a:nth-child(2) {
+    z-index: 0;
+    border: 2px solid black;
+    position: absolute;
+    color: transparent;
+    background: white;
+    top: 10px;
+    left: 10px;
+  }
+  body .project .project-1 .view-project a:first-child:active {
+    transform: translate3d(8px, 8px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    z-index: 100;
+    transition-duration: 2s;
   }
 }/*# sourceMappingURL=main.mobile.css.map */
