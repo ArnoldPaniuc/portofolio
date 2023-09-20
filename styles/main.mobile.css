@@ -13,7 +13,7 @@ body {
   html {
     background: linear-gradient(-45deg, #121e27, #121e27, #121e27, #23a6d5, #23d5ab);
     background-size: 400% 400%;
-    animation: gradient 10s ease infinite;
+    animation: gradient 7s ease infinite;
     line-height: 1.75;
   }
   @keyframes gradient {
@@ -46,12 +46,36 @@ body {
     margin-right: 30px;
     margin-top: 30px;
   }
+  body header ul.hidden {
+    display: none;
+  }
+  body header ul {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 0px;
+  }
+  body header ul a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  body header ul a li {
+    list-style: none;
+    border-bottom: 5px solid rgb(255, 113, 91);
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+  }
   body .main {
     color: #fff;
     margin: 0px 50px 100px 50px;
   }
   body .main h1 {
-    margin-top: 200px;
+    margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
     font-weight: 400;
@@ -170,7 +194,7 @@ body {
     text-decoration: none;
     margin-left: 50px;
     margin-right: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     font-weight: bold;
     color: rgb(255, 113, 91);
   }
@@ -241,6 +265,7 @@ body {
     font-weight: 300;
     border-radius: 25px;
     margin: 0;
+    padding-bottom: 10px;
   }
   body .project .project-1 .view-project {
     position: relative;
@@ -257,7 +282,7 @@ body {
     position: absolute;
     font-size: 20px;
     text-decoration: none;
-    padding: 0px 20px;
+    padding: 1rem 2.5rem 1.1rem;
     font-weight: bold;
   }
   body .project .project-1 .view-project a:nth-child(2) {
@@ -273,5 +298,153 @@ body {
     transform: translate3d(8px, 8px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     z-index: 100;
     transition-duration: 2s;
+  }
+  body .contact {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background: white;
+  }
+  body .contact .contact-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: start;
+    font-weight: 400;
+    padding-bottom: 50px;
+  }
+  body .contact .contact-box h1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    margin-right: 50px;
+    align-self: start;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.1;
+  }
+  body .contact .contact-box h1 > div:nth-child(-n+3) {
+    margin-right: 10px;
+  }
+  body .contact .contact-box h1 .highlight {
+    position: relative;
+    z-index: 100;
+    margin: 0;
+  }
+  body .contact .contact-box h1 .highlight div:nth-child(2) {
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    bottom: 3px;
+    z-index: -100;
+    background: rgb(255, 113, 91);
+    transform: translate(0.15rem);
+  }
+  body .contact .contact-box .coffee-cup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  body .contact .contact-box .coffee-cup a {
+    color: rgb(255, 113, 91);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+  }
+  body .contact .contact-box .view-project {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 150px;
+    padding-bottom: 2rem;
+    margin-left: 50px;
+  }
+  body .contact .contact-box .view-project a {
+    background: rgb(255, 113, 91);
+    color: white;
+    z-index: 100;
+    transition: transform 1s ease-in-out 0s;
+    position: absolute;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 1rem 2.5rem 1.1rem;
+    font-weight: bold;
+  }
+  body .contact .contact-box .view-project a:nth-child(2) {
+    z-index: 0;
+    border: 2px solid black;
+    position: absolute;
+    color: transparent;
+    background: white;
+    top: 10px;
+    left: 10px;
+  }
+  body .contact .contact-box .view-project a:first-child:active {
+    transform: translate3d(8px, 8px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    z-index: 100;
+    transition-duration: 2s;
+  }
+  body footer {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background: rgb(18, 30, 39);
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 50px;
+  }
+  body footer .bottom-name {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 50px;
+    align-self: start;
+    font-weight: 400;
+    padding-bottom: 30px;
+  }
+  body footer .bottom-name a {
+    font-size: 1.4rem !important;
+    line-height: 2rem !important;
+    margin-bottom: 1rem !important;
+    padding-bottom: 1rem !important;
+    max-width: 100px;
+  }
+  body footer .bottom-name .description {
+    color: #b7b4b9;
+    font-size: 0.8rem;
+    font-weight: 400;
+    width: 200px;
+  }
+  body footer .links {
+    color: #b7b4b9;
+  }
+  body footer .links1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  body footer .links1 a {
+    color: rgb(255, 113, 91);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding-bottom: 20px;
+  }
+  body footer .touch .touch1 {
+    color: #b7b4b9;
+    padding-bottom: 20px;
+  }
+  body footer .touch .contacts {
+    display: flex;
+    gap: 50px;
+    padding-bottom: 100px;
+  }
+  body footer .touch .contacts .linkedin-icon,
+  body footer .touch .contacts .github-icon,
+  body footer .touch .contacts .mail-icon {
+    fill: #b7b4b9;
+    width: 24px;
+    height: 24px;
   }
 }/*# sourceMappingURL=main.mobile.css.map */
