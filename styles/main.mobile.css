@@ -414,7 +414,7 @@ body {
     color: #b7b4b9;
     font-size: 0.8rem;
     font-weight: 400;
-    width: 200px;
+    width: 190px;
   }
   body footer .links {
     color: #b7b4b9;
@@ -437,7 +437,7 @@ body {
   body footer .touch .contacts {
     display: flex;
     gap: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
   }
   body footer .touch .contacts .linkedin-icon,
   body footer .touch .contacts .github-icon,
